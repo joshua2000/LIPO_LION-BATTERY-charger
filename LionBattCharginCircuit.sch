@@ -1,0 +1,493 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS61200DRC U2
+U 1 1 60090B02
+P 6610 3550
+F 0 "U2" H 6610 4017 50  0000 C CNN
+F 1 "TPS61200DRC" H 6610 3926 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 6610 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 6610 3550 50  0001 C CNN
+	1    6610 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60091ACB
+P 6610 4200
+F 0 "#PWR0101" H 6610 3950 50  0001 C CNN
+F 1 "GND" H 6615 4027 50  0000 C CNN
+F 2 "" H 6610 4200 50  0001 C CNN
+F 3 "" H 6610 4200 50  0001 C CNN
+	1    6610 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6510 4050 6510 4200
+Wire Wire Line
+	6510 4200 6610 4200
+Wire Wire Line
+	6610 4050 6610 4200
+Connection ~ 6610 4200
+Wire Wire Line
+	6710 4050 6710 4200
+Wire Wire Line
+	6710 4200 6610 4200
+$Comp
+L Device:R R4
+U 1 1 60096ED3
+P 5660 3450
+F 0 "R4" H 5730 3496 50  0000 L CNN
+F 1 "2M" H 5730 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5590 3450 50  0001 C CNN
+F 3 "~" H 5660 3450 50  0001 C CNN
+	1    5660 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 600974CE
+P 5660 3850
+F 0 "R5" H 5730 3896 50  0000 L CNN
+F 1 "180K" H 5730 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5590 3850 50  0001 C CNN
+F 3 "~" H 5660 3850 50  0001 C CNN
+	1    5660 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6210 3550 6060 3550
+Wire Wire Line
+	6060 3550 6060 3450
+Wire Wire Line
+	6210 3450 6060 3450
+Connection ~ 6060 3450
+Wire Wire Line
+	6060 3450 6060 3350
+Wire Wire Line
+	6210 3350 6060 3350
+Connection ~ 6060 3350
+Wire Wire Line
+	5660 3600 5660 3650
+Wire Wire Line
+	6210 3650 5660 3650
+Connection ~ 5660 3650
+Wire Wire Line
+	5660 3650 5660 3700
+Wire Wire Line
+	7010 3450 7210 3450
+Wire Wire Line
+	7010 3750 7210 3750
+$Comp
+L Device:C C4
+U 1 1 6009D153
+P 7560 3700
+F 0 "C4" H 7675 3746 50  0000 L CNN
+F 1 "1uF" H 7675 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7598 3550 50  0001 C CNN
+F 3 "~" H 7560 3700 50  0001 C CNN
+	1    7560 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7010 3550 7560 3550
+$Comp
+L power:GND #PWR0102
+U 1 1 6009E34A
+P 7560 3950
+F 0 "#PWR0102" H 7560 3700 50  0001 C CNN
+F 1 "GND" H 7565 3777 50  0000 C CNN
+F 2 "" H 7560 3950 50  0001 C CNN
+F 3 "" H 7560 3950 50  0001 C CNN
+	1    7560 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7560 3850 7560 3950
+$Comp
+L Device:L L1
+U 1 1 600A0828
+P 6610 2950
+F 0 "L1" V 6800 2950 50  0000 C CNN
+F 1 "2.2uH" V 6709 2950 50  0000 C CNN
+F 2 "Inductor_SMD:L_7.3x7.3_H4.5" H 6610 2950 50  0001 C CNN
+F 3 "~" H 6610 2950 50  0001 C CNN
+	1    6610 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6060 2950 6460 2950
+Wire Wire Line
+	6060 2950 6060 3350
+Wire Wire Line
+	7010 3350 7210 3350
+Wire Wire Line
+	7210 3350 7210 2950
+Wire Wire Line
+	7210 2950 6760 2950
+$Comp
+L Device:C C3
+U 1 1 600A60B4
+P 5260 3650
+F 0 "C3" H 5375 3696 50  0000 L CNN
+F 1 "4.7uF" H 5375 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5298 3500 50  0001 C CNN
+F 3 "~" H 5260 3650 50  0001 C CNN
+	1    5260 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5660 3300 5660 2950
+Connection ~ 5660 2950
+Wire Wire Line
+	5660 2950 6060 2950
+Wire Wire Line
+	5140 2950 5260 2950
+Wire Wire Line
+	5260 3500 5260 2950
+Wire Wire Line
+	5260 2950 5660 2950
+$Comp
+L power:GND #PWR0103
+U 1 1 600AD9C0
+P 5260 4150
+F 0 "#PWR0103" H 5260 3900 50  0001 C CNN
+F 1 "GND" H 5265 3977 50  0000 C CNN
+F 2 "" H 5260 4150 50  0001 C CNN
+F 3 "" H 5260 4150 50  0001 C CNN
+	1    5260 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5260 3800 5260 4150
+$Comp
+L power:GND #PWR0104
+U 1 1 600AFD54
+P 5660 4150
+F 0 "#PWR0104" H 5660 3900 50  0001 C CNN
+F 1 "GND" H 5665 3977 50  0000 C CNN
+F 2 "" H 5660 4150 50  0001 C CNN
+F 3 "" H 5660 4150 50  0001 C CNN
+	1    5660 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5660 4150 5660 4000
+$Comp
+L Device:C C5
+U 1 1 600B3C12
+P 7950 3710
+F 0 "C5" H 8065 3756 50  0000 L CNN
+F 1 "22uF" H 8065 3665 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7988 3560 50  0001 C CNN
+F 3 "~" H 7950 3710 50  0001 C CNN
+	1    7950 3710
+	1    0    0    -1  
+$EndComp
+Text GLabel 7210 3450 2    50   Input ~ 0
+Vout
+Text GLabel 7210 3750 2    50   Input ~ 0
+Vout
+$Comp
+L power:GND #PWR0105
+U 1 1 600B8365
+P 7950 3980
+F 0 "#PWR0105" H 7950 3730 50  0001 C CNN
+F 1 "GND" H 7955 3807 50  0000 C CNN
+F 2 "" H 7950 3980 50  0001 C CNN
+F 3 "" H 7950 3980 50  0001 C CNN
+	1    7950 3980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3860 7950 3980
+Wire Wire Line
+	7950 3560 8240 3560
+Text GLabel 8240 3560 2    50   Input ~ 0
+5V_out
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 600BDEAF
+P 880 1220
+F 0 "J1" H 937 1687 50  0000 C CNN
+F 1 "USB_B_Micro" H 937 1596 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1030 1170 50  0001 C CNN
+F 3 "~" H 1030 1170 50  0001 C CNN
+	1    880  1220
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1180 1220
+NoConn ~ 1180 1320
+NoConn ~ 1180 1420
+$Comp
+L power:GND #PWR0106
+U 1 1 600C2429
+P 780 1740
+F 0 "#PWR0106" H 780 1490 50  0001 C CNN
+F 1 "GND" V 690 1690 50  0000 C CNN
+F 2 "" H 780 1740 50  0001 C CNN
+F 3 "" H 780 1740 50  0001 C CNN
+	1    780  1740
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 600C303B
+P 900 1740
+F 0 "#PWR0107" H 900 1490 50  0001 C CNN
+F 1 "GND" V 990 1690 50  0000 C CNN
+F 2 "" H 900 1740 50  0001 C CNN
+F 3 "" H 900 1740 50  0001 C CNN
+	1    900  1740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	780  1620 780  1740
+Wire Wire Line
+	880  1620 880  1740
+$Comp
+L Battery_Management:MCP73831-2-OT U1
+U 1 1 600C7ED1
+P 2590 1230
+F 0 "U1" H 2650 1590 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 2930 1485 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2640 980 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2440 1180 50  0001 C CNN
+	1    2590 1230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	880  1740 900  1740
+$Comp
+L Device:R R1
+U 1 1 600E0D76
+P 1920 1330
+F 0 "R1" V 1805 1285 50  0000 C CNN
+F 1 "2k" V 1995 1305 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1850 1330 50  0001 C CNN
+F 3 "~" H 1920 1330 50  0001 C CNN
+	1    1920 1330
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2190 1330 2070 1330
+$Comp
+L power:GND #PWR0108
+U 1 1 600F00BD
+P 1570 1440
+F 0 "#PWR0108" H 1570 1190 50  0001 C CNN
+F 1 "GND" V 1660 1390 50  0000 C CNN
+F 2 "" H 1570 1440 50  0001 C CNN
+F 3 "" H 1570 1440 50  0001 C CNN
+	1    1570 1440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1770 1330 1570 1330
+Wire Wire Line
+	1570 1330 1570 1440
+Wire Wire Line
+	1570 1210 1570 1330
+Connection ~ 1570 1330
+Wire Wire Line
+	1180 660  1180 790 
+$Comp
+L Device:C C1
+U 1 1 600E13DA
+P 1570 1060
+F 0 "C1" H 1455 1014 50  0000 R CNN
+F 1 "4.7uF" H 1455 1105 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1608 910 50  0001 C CNN
+F 3 "~" H 1570 1060 50  0001 C CNN
+	1    1570 1060
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1570 910  1570 790 
+Wire Wire Line
+	1570 790  1180 790 
+Connection ~ 1180 790 
+Wire Wire Line
+	1180 790  1180 1020
+NoConn ~ 2990 1330
+$Comp
+L Device:C C2
+U 1 1 600FEE46
+P 3430 1280
+F 0 "C2" H 3315 1234 50  0000 R CNN
+F 1 "4.7uF" H 3315 1325 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3468 1130 50  0001 C CNN
+F 3 "~" H 3430 1280 50  0001 C CNN
+	1    3430 1280
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2990 1130 3430 1130
+$Comp
+L power:GND #PWR0109
+U 1 1 60101CA5
+P 2590 1700
+F 0 "#PWR0109" H 2590 1450 50  0001 C CNN
+F 1 "GND" V 2680 1650 50  0000 C CNN
+F 2 "" H 2590 1700 50  0001 C CNN
+F 3 "" H 2590 1700 50  0001 C CNN
+	1    2590 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60102378
+P 3430 1700
+F 0 "#PWR0110" H 3430 1450 50  0001 C CNN
+F 1 "GND" V 3520 1650 50  0000 C CNN
+F 2 "" H 3430 1700 50  0001 C CNN
+F 3 "" H 3430 1700 50  0001 C CNN
+	1    3430 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2590 1530 2590 1700
+Wire Wire Line
+	3430 1430 3430 1700
+Wire Wire Line
+	2590 930  2590 790 
+Wire Wire Line
+	2590 790  1570 790 
+Connection ~ 1570 790 
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6010713F
+P 4050 1330
+F 0 "BT1" H 4168 1426 50  0000 L CNN
+F 1 "Battery_Cell" H 4168 1335 50  0000 L CNN
+F 2 "" V 4050 1390 50  0001 C CNN
+F 3 "~" V 4050 1390 50  0001 C CNN
+	1    4050 1330
+	1    0    0    -1  
+$EndComp
+Connection ~ 3430 1130
+$Comp
+L power:GND #PWR0111
+U 1 1 60109094
+P 4050 1690
+F 0 "#PWR0111" H 4050 1440 50  0001 C CNN
+F 1 "GND" V 4140 1640 50  0000 C CNN
+F 2 "" H 4050 1690 50  0001 C CNN
+F 3 "" H 4050 1690 50  0001 C CNN
+	1    4050 1690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1430 4050 1690
+Text Notes 1240 1920 0    50   ~ 0
+2k resistor charges upto 500mA
+$Comp
+L Device:Q_PMOS_DSG Q1
+U 1 1 6008FDDC
+P 5045 1030
+F 0 "Q1" V 5294 1030 50  0000 C CNN
+F 1 "Q_PMOS_DSG" V 5385 1030 50  0000 C CNN
+F 2 "" H 5245 1130 50  0001 C CNN
+F 3 "~" H 5045 1030 50  0001 C CNN
+	1    5045 1030
+	0    1    1    0   
+$EndComp
+Text GLabel 1180 660  1    50   Input ~ 0
+5V
+Wire Wire Line
+	3430 1130 4050 1130
+Connection ~ 4050 1130
+Wire Wire Line
+	4050 1130 4845 1130
+Wire Wire Line
+	5245 1130 5440 1130
+Text GLabel 5440 1130 2    50   Input ~ 0
++5V
+Text GLabel 5140 2950 0    50   Input ~ 0
++5V
+$Comp
+L Device:R R3
+U 1 1 600C52E9
+P 4740 705
+F 0 "R3" H 4810 751 50  0000 L CNN
+F 1 "10k" H 4810 660 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4670 705 50  0001 C CNN
+F 3 "~" H 4740 705 50  0001 C CNN
+	1    4740 705 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5045 555  4740 555 
+Wire Wire Line
+	5045 555  5045 830 
+Wire Wire Line
+	4740 555  4640 555 
+Connection ~ 4740 555 
+$Comp
+L power:GND #PWR0112
+U 1 1 600C8CD7
+P 4740 855
+F 0 "#PWR0112" H 4740 605 50  0001 C CNN
+F 1 "GND" V 4830 805 50  0000 C CNN
+F 2 "" H 4740 855 50  0001 C CNN
+F 3 "" H 4740 855 50  0001 C CNN
+	1    4740 855 
+	1    0    0    -1  
+$EndComp
+Text GLabel 4640 555  0    50   Input ~ 0
+5V
+$Comp
+L Device:D_Schottky D1
+U 1 1 600D1489
+P 7950 3150
+F 0 "D1" H 7975 3040 50  0000 C CNN
+F 1 "D_Schottky" H 7935 3270 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 7950 3150 50  0001 C CNN
+F 3 "~" H 7950 3150 50  0001 C CNN
+	1    7950 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3560 7840 3560
+Connection ~ 7950 3560
+Text GLabel 7840 3560 0    50   Input ~ 0
+Vout
+Wire Wire Line
+	7950 3555 7950 3300
+Wire Wire Line
+	7950 3000 7950 2885
+Wire Wire Line
+	5045 555  5285 555 
+Connection ~ 5045 555 
+Text GLabel 5285 555  2    50   Input ~ 0
+A+5V
+Text GLabel 7950 2885 1    50   Input ~ 0
+A+5V
+Text Notes 8830 665  0    50   ~ 0
+If vbus power is disconnected, the 10k pulls to ground 
+Text Notes 8835 755  0    50   ~ 0
+Allowing the battery to conduct to the tps ic
+Text Notes 8730 665  0    50   ~ 0
+1.
+Text Notes 8725 930  0    50   ~ 0
+2. when vbus has power,it pulls the 10k resistor high, \nand shuts down the pchannel mosfet.
+Text Notes 8845 1140 0    50   ~ 0
+Thus the voltage charges the battery and passes \n       through the schotky diode 
+Text Notes 8735 1055 0    50   ~ 0
+3.
+Connection ~ 5260 2950
+Connection ~ 6060 2950
+$EndSCHEMATC
